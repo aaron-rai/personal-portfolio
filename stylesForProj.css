@@ -1,0 +1,271 @@
+/*083D77, 061826, 2C363F*/
+
+* {
+    font-family: 'Merriweather', serif;
+}
+
+nav {
+    background-color: #2C363F;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+a:hover {
+    color: red;
+}
+
+nav img {
+    position: relative;
+    right: 1100px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+    top: 17px;
+    font-size: 15px;
+}
+
+header {
+    background-image: url(img.png);
+    background-size: cover;
+    background-position: cover center;
+    height: 100vh;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    bottom: 150px;
+}
+
+header h2 {
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    top: 350px;
+}
+
+body {
+    background-color: #2C363F;
+    color: white;
+    /*min-width: 1140px;*/
+}
+
+.devTeam {
+    width: 100%;
+    display: flex;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+
+h2 {
+    font-size: 45px;
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    color: red;
+}
+
+.devTeam h4 {
+    font-size: 25px;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #FF0000;
+    border-radius: 3px;
+}
+
+.members h4 {
+    color: red;
+}
+
+.background {
+    background-color: #171d4a;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.background h4 {
+    color: red;
+    font-size: 24px;
+}
+
+.background h2 {
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: red;
+}
+
+.background hr {
+    position: relative;
+    bottom: 25px;
+}
+
+.scope {
+    background-color: #1C1C1C;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.scope h2 {
+    font-size: 45px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: red;
+    bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.scope h3 {
+    color: red;
+}
+
+.points {
+    position: relative;
+    bottom: 30px;
+}
+
+.scope hr {
+    position: relative;
+    bottom: 55px;
+}
+
+.solution {
+    background-color: #171d4a;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.solution h2 {
+    font-size: 45px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: red;
+    text-align: center;
+}
+
+.solution hr {
+    position: relative;
+    bottom: 35px;
+}
+
+.solution h3 {
+    color: red;
+    font-size: 25px;
+}
+
+.solution li {
+    padding: 5px;
+}
+
+.highlights {
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+}
+
+.highlights h2 {
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: red;
+}
+
+.highlights hr {
+    position: relative;
+    bottom: 25px;
+}
+
+.highLightImages {
+    padding: 10px;
+}
+
+.implementation {
+    width: 100%;
+    background-color: black;
+}
+
+.imp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #FF0000;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imp h4 {
+    color: red;
+}
+
+.lesson li {
+    padding: 5px;
+}
+
+.timeline {
+    background-color: white;
+}
+
+.timeline img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.timeline h2 {
+    text-align: center;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: red;
+    font-size: 50px;
+}
+
+.timeline hr {
+    position: relative;
+    bottom: 35px;
+}
+
+.timeline h4 {
+    color: red;
+    font-size: 18px;
+}
+
+.thankshoe {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: red;
+}

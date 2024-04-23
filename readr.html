@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="rdrstyles.css" rel="stylesheet" type="text/css">
+
+<head>
+    <title>First JavaScript Project</title>
+    <h1>Recursive Descent Recognizer</h1>
+    <hr>
+    <br>
+</head>
+
+<section class="description">
+    <h2>Description</h2>
+    <hr>
+    <p>This project is a recursive parser made with JavaScript. Below is the equation to factor out redundancy, valid strings must be terminated with $ and have some mathematical operation included that is able to satisfy the equation below, and strings
+        that are not terminated with $ is invalid.
+    </p>
+
+</section>
+
+<body>
+    <div class="header">
+        <br>
+    </div>
+    <div class2="header2">
+        <p>EXP ::= EXP + TERM | EXP - TERM | TERM</p>
+        <p>TERM ::= TERM * FACTOR | TERM / FACTOR | FACTOR </p>
+        <p>FACTOR ::= ( EXP ) | DIGIT </p>
+        <p>DIGIT ::= 0 | 1 | 2 | 3 </p><br>
+
+        <p>Valid Strings:</p>
+        <p>1+2$</p>
+        <p>0-3*2$</p>
+        <p>2/(3+1)$</p>
+
+        <p>Invalid Strings:</p>
+        <p> 1+2</p>
+        <p>1*4$</p>
+        <p> 1*a$</p>
+
+        <p>Enter a Valid String:</p>
+        <input type="text" placeholder="Input String here" id="input">
+        <button onclick="CheckString()"> Submit </button> <br>
+
+    </div>
+    <script>
+        function CheckString() {
+            var input = document.getElementById("input").value;
+
+            var count = 0;
+            var token = input[count];
+            var valid = 1;
+
+            console.log("current token: " + token);
+            Start();
+
+            if (valid == 1) {
+                document.getElementById("output").innerHTML = input + " is a valid string.";
+            } else {
+                document.getElementById("output").innerHTML = input + " is not a valid string.";
+            }
+
+            function Start() {
+                Exp();
+                if (token != '$') {
+                    Error();
+                }
+                count++;
+                if (count != input.length) {
+                    Error();
+                }
+            }
+
+            function Exp() {
+                if (token == '(' || token == '0' || token == '1' || token == '2' || token == '3') {
+                    Term();
+                } else {
+                    Error();
+                }
+
+                while (token == '+' || token == '-') {
+                    Lex();
+                    if (token == '(' || token == '0' || token == '1' || token == '2' || token == '3') {
+                        Term();
+                    } else {
+                        Error();
+                    }
+                }
+            }
+
+            function Term() {
+                if (token == '(' || token == '0' || token == '1' || token == '2' || token == '3') {
+                    Factor();
+                } else {
+                    Error();
+                }
+
+                while (token == '*' || token == '/') {
+                    Lex();
+                    if (token == '(' || token == '0' || token == '1' || token == '2' || token == '3') {
+                        Factor();
+                    } else {
+                        Error();
+                    }
+                }
+            }
+
+            function Factor() {
+                if (token == '(') {
+                    Lex();
+                    Exp();
+                    if (token == ')') {
+                        Lex();
+                    } else {
+                        Error();
+                    }
+                } else if (token == '0' || token == '1' || token == '2' || token == '3') {
+                    Digit();
+                } else {
+                    Error();
+                }
+
+            }
+
+            function Digit() {
+                if (token == '0' || token == '1' || token == '2' || token == '3') {
+                    Lex();
+                } else {
+                    Error();
+                }
+            }
+
+            function Lex() {
+                count++;
+                token = input[count];
+                console.log("current token: " + token);
+            }
+
+            function Error() {
+                valid = 0;
+            }
+
+        }
+    </script>
+    <div class="output">
+        <p id="output"></p>
+    </div>
+    <a href="index.html">Back to Main Page</a>
+</body>
+
+</html>

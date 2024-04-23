@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #274156;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 48px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header p {
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.gif {
+    text-align: center;
+    color: white;
+}
+
+.sortText {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+}
+
+.sorts {
+    padding-top: -50px;
+    display: flex;
+    flex-wrap: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0;
+    height: 70vh;
+}
+
+.sort-logo {
+    max-width: 200px;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: transform 0.3s ease;
+}
+
+.sorts p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.sort-logo:hover {
+    transform: scale(1.25);
+}
+
+body a {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    align-items: center;
+}
+
+footer {
+    background-color: #2B2827;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    <title>Aaron Rai Computer Science Portfolio</title>
+
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#social">Social</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <header id="welcome-section">
+        <h1>Aaron Rai </h1>
+        <p>Computer Science Student</p>
+        <div class="topButtons">
+            <a class="cta" href="resume.html" target="_blank"><button>Resume</button></a>
+            <a class="cta" href="#projects"><button>Projects</button></a>
+        </div>
+    </header>
+
+</head>
+
+<body>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <hr>
+        <p>I am developer, and web designer from Roseville, California. Over the years some skills I have acquired are optimization, leadership, and the ability to work in many different languages and enviroments. My leadership and teamwork experience have
+            helped me colloborate better with clients to insure they receieve their desired final project.
+        </p>
+        <div class="interests">
+            <h3>Interests</h3>
+            <hr>
+            <ul>
+                <li>Web-development</li>
+                <li>Software Engineering</li>
+                <li>Game Design</li>
+                <li>Databases</li>
+            </ul>
+        </div>
+        <div class="language">
+            <h3>Proficient Languages</h3>
+            <hr>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>C</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages" class="backgroundimg">
+        <h3>Click To View Corresponding Projects</h3>
+        <div class="lang-photos">
+            <p>Java</p>
+            <a href="https://drive.google.com/drive/folders/1R4Mt0HXxd3LPTX8zf7bcDc2aKVbJq4sP?usp=sharing" target="_blank">
+                <img src="java.png" class="lang-logo" alt="java">
+            </a>
+            <p>HTML</p>
+            <a href="https://codepen.io/dashboard/" target="_blank">
+                <img src="html.png" class="lang-logo" alt="html">
+            </a>
+            <p>CSS</p>
+            <a href="https://codepen.io/dashboard/" target="_blank">
+                <img src="css.png" class="lang-logo" alt="css">
+            </a>
+            <p>PHP/MySQL</p>
+            <a href="" target="_blank">
+                <img src="php.png" class="lang-logo" alt="php">
+            </a>
+            <p>C</p>
+            <a href="https://drive.google.com/drive/folders/1BPBgwMI3H-mlw7kRnhG9MZkZWtKsjagG?usp=sharing" target="_blank">
+                <img src="C.png" class="lang-logo" alt="c">
+            </a>
+            <p>JavaScript</p>
+            <a href="https://github.com/aaronrai24?tab=repositories" target="_blank">
+                <img src="js.png" class="lang-logo" alt="javascript">
+            </a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-container">
+
+            <a href="sortVisual.html" target="_blank" class="project-tile">
+                <img src="Sort.png" alt="sort">
+                <p>Sorting Algorithms Visualized</p>
+            </a>
+
+            <a href="pingpong.html" taret="_blank" class="project-tile">
+                <img src="paddle.png" alt="paddle">
+                <p>Ping Pong Game</p>
+            </a>
+
+            <a href="https://github.com/aaronrai24/CSC-133-Sili-Challenge/tree/master/src/com/mycompany/myapp" target="_blank" class="project-tile">
+                <img src="sili-challenge.png" alt="sili game">
+                <p>Sili-Challenge Game</p>
+            </a>
+
+            <a href="https://github.com/aaronrai24/GradeCalculator/tree/master/gradeCalc-master/gradeCalc-master/gradeCalculator/src/main/java/edu/csus/csc131/gradeCalculator/edu/csus/csc131/gradeCalculator" target="_blank" class="project-tile">
+                <img src="gradeCalc.PNG" alt="gradeCalc">
+                <p>Grade Calculator</p>
+            </a>
+
+            <a href="projectPage.html" target="_blank" class="project-tile">
+                <img src="seatDeetz.png" alt="seatDeetz">
+                <p>SeatDeetz</p>
+            </a>
+
+            <a href="https://codepen.io/aaronrai24/full/bGEjWLa" target="_blank" class="project-tile" id>
+                <img src="m3.png" alt="product landing page">
+                <p>Product Landing Page</p>
+            </a>
+
+            <a href="readr.html" target="_blank" class="project-tile">
+                <img src="js2.png" alt="parser">
+                <p>Javascript Parser</p>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-background">
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <h3>E-Mail: aaronrai@csus.edu</h3>
+            <div class="border"></div>
+            <form class="contact-form" action="https://formspree.io/f/xjvpnvko" method="POST">
+                <input type="text" name="Name" class="contact-form-text" placeholder="Your Name">
+                <input type="text" name="Email" class="contact-form-text" placeholder="Your E-mail">
+                <input type="text" name="Phone" class="contact-form-text" placeholder="Your Phone">
+                <textarea name="Message" class="contact-form-text" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <section id="social" class="background-section">
+        <h2>Social Media</h2>
+        <p>You can find me on</p>
+        <ul class="links">
+            <li><a id="profile-link" href="https://www.linkedin.com/in/aaron-rai-3448011a0/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/aaronrai24/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/aaronrai24" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </section>
+
+</body>
+
+<footer>Made by Aaron Rai</footer>
+
+</html>
