@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background2);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: var(--background1);
+    border: none;
+    border-radius: var(--xl);
+    color: var(--white);
+    cursor: pointer;
+    font-family: 'roboto', sans-serif;
+    font-size: var(--l);
+    font-weight: 500;
+    margin: var(--s);
+    text-decoration: none;
+    width: 80%;
+}
+
+footer {
+    background-color: var(--background3);
+    color: var(--white);
+    padding: var(--s);
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position: center center;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    position: relative;
+}
+
+hr {
+    margin-left: var(--xs);
+    width: 8%;
+}
+
+nav {
+    background-color: var(--background3);
+    color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    padding: var(--m);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    border-bottom: 3px solid #1C6E8C;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(10px);
+    transition: transform 0.3s ease;
+    opacity: 0;
+}
+
+nav a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+section {
+    padding: var(--xl);
+    text-align: center;
+}
+
+.about {
+    background-color: var(--background1);
+    color: var(--white);
+    font-size: var(--l);
+    text-align: left;
+}
+
+.about h2 {
+    color: var(--red);
+    padding: 0px 0 0 var(--s);
+    text-shadow: var(--text-shadow);
+}
+
+.about h3 {
+    padding: 0px 0px 0px var(--s);
+}
+
+.about p {
+    margin: var(--s);
+}
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner {
+    background-color: var(--red);
+    color: var(--white);
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.background-section {
+    background-color: var(--border);
+    color: var(--background1);
+}
+
+.backgroundimg {
+    background-image: url(https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1247&q=80);
+    background-position: center center;
+    background-size: cover;
+    color: var(--white);
+    position: relative;
+    text-shadow: var(--text-shadow);
+}
+
+.contact {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    margin: auto;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 0 var(--s);
+}
+
+.contact-form-btn {
+    background: var(--background1);
+    border: 0;
+    border-radius: var(--l);
+    color: var(--white);
+    cursor: pointer;
+    float: right;
+    padding: var(--s) var(--xl);
+    transition: 0.5s;
+}
+
+.contact-form-text {
+    background: var(--black);
+    box-sizing: border-box;
+    color: var(--white);
+    display: block;
+    margin: var(--m) 0;
+    padding: var(--l) var(--xl);
+    transition: 0.5s;
+    width: 100%;
+}
+
+.contact-section {
+    background: url(https://images.unsplash.com/photo-1534852654286-120d822937f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center;
+    background-size: cover;
+    padding: var(--xl) 0;
+}
+
+.header h1 {
+    font-size: 60px;
+    margin-bottom: var(--xs);
+    margin-top: 0px;
+}
+
+.header p {
+    font-size: var(--xl);
+    margin: 0;
+}
+
+.header::after {
+    background-color: #000;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header * {
+    position: relative;
+    z-index: 1;
+}
+
+.interests h3, .tools h3 {
+    color: var(--red);
+    padding: 0px -var(--s) 0px var(--s);
+    text-align: left;
+    text-shadow: var(--text-shadow);
+}
+
+.lang-logo {
+    max-width: 200px;
+    padding-left: var(--xl);
+    padding-right: var(--xl);
+    padding-top: 0px;
+    transition: transform 0.3s ease;
+}
+
+.lang-photos {
+    align-items: center;
+    display: flex;
+    flex-wrap: center;
+    height: 70vh;
+    justify-content: center;
+    margin: var(--l) auto 0;
+}
+
+.lang-photos p {
+    color: var(--background1);
+    font-size: var(--l);
+    margin-top: var(--s);
+    text-shadow: var(--text-shadow);
+}
+
+.language h3 {
+    color: var(--red);
+    padding: 0px 0 0 var(--s);
+    text-align: left;
+    text-shadow: var(--text-shadow);
+}
+
+.language hr {
+    width: 13.5%;
+}
+
+.links {
+    display: flex;
+    gap: var(--s);
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links a {
+    border-radius: 50%;
+    border: var(--xs) solid;
+    color: var(--white);
+    display: inline-flex;
+    font-size: var(--xl);
+    height: var(--xl);
+    justify-content: center;
+    text-decoration: none;
+    width: var(--xl);
+}
+
+.project-tile {
+    margin: var(--s);
+    max-width: 280px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-tile img {
+    max-width: 100%;
+}
+
+.project-tile p {
+    color: black;
+    font-size: var(--l);
+    margin-top: var(--s);
+}
+
+.projects-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: center;
+    justify-content: center;
+    margin: var(--xl) auto 0;
+    max-width: 900px;
+}
+
+.projects-container p {
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.projects h2 {
+    color: var(--white);
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+.projects hr {
+    margin-left: 77var(--xs);
+    width: 15%;
+}
+
+.section h2 {
+    margin: 0;
+}
+
+.section p {
+    margin-top: 0;
+}
+
+.top-buttons {
+    align-items: center;
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: var(--xl);
+}
+
+@media(max-width: 440px) {
+    section {
+        padding: var(--l);
+    }
+}
