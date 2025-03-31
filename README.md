@@ -1,6 +1,6 @@
 # PersonalPortfolio
 
-Access the website [here](https://aaronrai24.github.io/personal-portfolio/index.html).
+Access the website [here](https://aaron-rai.github.io/personal-portfolio/index.html).
 
 This is a personal portfolio website that showcases my projects and skills. It is built using HTML, CSS, and JavaScript. The website is currently semi responsive and works on mobile, tablet, and desktop screens.
 
